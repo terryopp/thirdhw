@@ -32,4 +32,11 @@ function Graph() { //Конструктор для отрисовки
         ctx.stroke();
     }
     
+    this.point = (x, y, color) => {
+        ctx.beginPath();
+        ctx.arc(20 + d/2 + (x-1) * d, canvas.height - 20 - d/2 - (y-1) * d, d/3, 0, 2*Math.PI);
+        ctx.fillStyle = color;
+        ctx.fill();
+        ctx.stroke();
+    }
 }
