@@ -39,12 +39,4 @@ function Graph() { //Конструктор для отрисовки
         ctx.fill();
         ctx.stroke();
     }
-
-    this.getProps = () => {
-        return {
-            w: canvas.width - 40,
-            h: canvas.height - 40,
-            d: d
-        }
-    }
 }
