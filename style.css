@@ -25,6 +25,19 @@ body {
     text-align: center;
 }
 
+#answers {
+    text-align: left;
+    float: center;
+    width: 440px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px dashed #918de4;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 input {
     text-align: center;
     border: 1px dashed #4F92E5;

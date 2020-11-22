@@ -1,7 +1,8 @@
 window.onload = function() {
     
-    var graph = new Graph();
+    const graph = new Graph();
     graph.print();
+    const calc = new Calc(graph.getProps());
 
     let x1, y1, x2, y2;
 
