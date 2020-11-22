@@ -7,10 +7,10 @@ window.onload = function() {
     let x1, y1, x2, y2;
 
     document.getElementById('start').addEventListener('click', () => {
-        x1 = document.getElementById('x1').value*1 || 1;
-        y1 = document.getElementById('y1').value*1 || 1;
-        x2 = document.getElementById('x2').value*1 || 2;
-        y2 = document.getElementById('y2').value*1 || 2;
+        x1 = Math.round(document.getElementById('x1').value*1 || 1);
+        y1 = Math.round(document.getElementById('y1').value*1 || 1);
+        x2 = Math.round(document.getElementById('x2').value*1 || 2);
+        y2 = Math.round(document.getElementById('y2').value*1 || 2);
         if (x1*y1 > 0 && x1 <= 8 && x2 <= 8 && y1 <= 8 && y2 <= 8 && x2*y2 > 0 && x1>0 && x2>0) {
             graph.print();
             graph.point(x1, y1, 'red');
